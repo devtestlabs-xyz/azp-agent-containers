@@ -1,4 +1,3 @@
-# AZP Release Agent variant
 # Official Debian minimal image
 ARG  BASE_IMAGE_VERSION
 FROM debian:${BASE_IMAGE_VERSION}
