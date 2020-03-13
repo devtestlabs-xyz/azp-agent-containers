@@ -9,7 +9,7 @@ on:
 env:
   _GH_BASE_URI: https://github.com/
   _CALVER_VERSION: 20200313.1
-  _BASE_IMAGE_VERSION: stetch-slim
+  _BASE_IMAGE_VERSION: stretch-slim
   _BASE_IMAGE: debian
     
 jobs:
