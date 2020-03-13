@@ -32,7 +32,7 @@ RUN set -x && \
         ssh \
         openssl && \
    rm -rf /var/lib/apt/lists/* && \
-   chmod +x start.sh
+   chmod +x /azp/start.sh
 
 WORKDIR /azp
 
