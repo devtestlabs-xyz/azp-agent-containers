@@ -21,7 +21,7 @@ jobs:
       - name: Publish to Docker Repository
         env:
           _IMAGE_LONG_VERSION: ${{ env._BASE_IMAGE }}-${{ env._BASE_IMAGE_VERSION }}-${{ env._CALVER_VERSION }}
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           context: dockerfiles/debian-stretch-slim
           buildargs: BASE_IMAGE_VERSION=${{ env._BASE_IMAGE_VERSION }}, VCS_URL=${{ env._GH_BASE_URI }}${{ env.GITHUB_REPOSITORY }}, VCS_REF=${{ env.GITHUB_SHA }}, IMAGE_LONG_VERSION=${{ env._IMAGE_LONG_VERSION }}
